@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --hue: 199;
+
+  --ff-primary: "Poppins", sans-serif;
+  --bg-color: #000;
+  --text-color: #ebebeb;
+  --primary-color: hsl(var(--hue), 95%, 30%);
+  --button-star: #065e7c;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+button {
+}
+
+#app {
+  padding: 2rem;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2.5rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search input {
+  height: 3.2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  padding: 0 0.8rem;
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.9rem;
+  background-color: var(--button-star);
+  border-radius: 0.4rem;
+  border: none;
+  height: 3.2rem;
+  padding: 0 1rem;
+
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #45b1d5;
+  filter: brightness(1.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+table th {
+  background: var(--primary-color);
+  text-align: center;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: 0.4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 0.4rem;
+}
+
+table tr:nth-child(odd) {
+  background: #030b0d;
+}
+
+table tr:nth-child(even) {
+  background: #06181c;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user p {
+  font-weight: bold;
+}
+
+td .btn-remove {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}

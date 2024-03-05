@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  padding: 4.8rem 6.4rem 6.4rem;
+  margin-top: 12rem;
+  width: min(42.8rem, 90%);
+
+  text-align: center;
+
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.8);
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+
+  color: #34355b;
+
+  margin-bottom: 1.6rem;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+
+  margin-bottom: 2rem;
+
+  color: #34355b;
+}
+
+button {
+  border: none;
+  background: none;
+
+  /* width: 20rem;
+  height: 17rem; */
+
+  display: flex;
+
+  cursor: pointer;
+}
+
+.screen2 p {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  text-align: center;
+
+  color: #000;
+  background: #e4edf1;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(85, 85, 85, 0.5);
+
+  margin-bottom: 1.7rem;
+
+  animation: message 1.5s ease-in-out;
+}
+
+#btnReset {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  background: #ff9500;
+
+  padding: 1.6rem;
+  margin: 0 auto;
+
+  transition: background 0.3s;
+}
+
+#btnReset:hover {
+  background: #ca7600;
+}
+
+.screen1 img:hover {
+  animation: shake 0.8s infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-5px, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(5px, 0);
+  }
+}
+
+@keyframes message {
+  0% {
+    transform: translateY(30rem);
+    scale: 50%;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    scale: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
